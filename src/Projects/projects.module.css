@@ -1,0 +1,14 @@
+* {
+  color: black;
+}
+.carousel-indicators li {
+  background-color: rgb(0, 0, 0);
+}
+/* span {
+  color: black;
+  filter: invert(1);
+} */
+.carousel-control-next-icon span {
+  color: black;
+  filter: invert(1);
+}
