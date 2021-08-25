@@ -1,8 +1,10 @@
 import "./App.css";
+import React, { useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import DevIcon from "devicon-react-svg";
 import { FaGithub } from "react-icons/fa";
+import { BsSun, BsMoon } from "react-icons/bs";
 import Wpgym from "./Projects/wpgym";
 import Books from "./Projects/books";
 import Coins from "./Projects/cyber_coins";
@@ -12,25 +14,58 @@ import Transco from "./Projects/transco_brisbane";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
+  const [theme, setTheme] = useState("light");
+
+  const ToggleTheme = () => {
+    if (theme === "light") {
+      setTheme("dark");
+      document.body.classList.add("bodyDark");
+    } else {
+      setTheme("light");
+      document.body.classList.add("bodyDark");
+      document.body.classList.remove("bodyDark");
+    }
+  };
+
   const devIconStyle = {
     width: "60px",
     height: "60px",
     margin: ".4em",
   };
   return (
-    <div className="App">
+    <div className={theme === "light" ? "App" : "AppDark"}>
+      {theme === "light" ? (
+        <BsSun id="lightDark" onClick={() => ToggleTheme()} />
+      ) : (
+        <BsMoon
+          id="lightDark"
+          style={{ fill: "white" }}
+          onClick={() => ToggleTheme()}
+        />
+      )}
+
       <Container>
         <Row style={{ paddingTop: "10%" }}>
           <Col md="6">
             <img id="profilePic" />
-            <h2>Matthew Hansen</h2>
-            <p style={{ marginBottom: "3em" }}>emailformatthew@email.com</p>
+            <h2 className={theme === "light" ? "dark" : "light"}>
+              Matthew Hansen
+            </h2>
+            <p
+              className={theme === "light" ? "dark" : "light"}
+              style={{ marginBottom: "3em" }}
+            >
+              emailformatthew@email.com
+            </p>
           </Col>
           <Col md="6">
-            <h3 className="divider" id="about">
-              <span>About</span>
+            <h3
+              className={theme === "light" ? "divider" : "dividerDark"}
+              id="about"
+            >
+              <span className={theme === "light" ? "" : "dark"}>About</span>
             </h3>
-            <p>
+            <p className={theme === "light" ? "dark" : "light"}>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
               similique eaque repellat accusamus delectus nemo aperiam explicabo
               quo dolorem mollitia fugiat enim provident nihil vitae qui omnis
@@ -46,8 +81,8 @@ function App() {
         </Row>
         <Row>
           <Col>
-            <h3 className="divider">
-              <span>Skills</span>
+            <h3 className={theme === "light" ? "divider" : "dividerDark"}>
+              <span className={theme === "light" ? "" : "dark"}>Skills</span>
             </h3>
             <div>
               <DevIcon icon="html5" style={devIconStyle} fill="#F06529" />
@@ -63,19 +98,43 @@ function App() {
               <DevIcon icon="drupal" style={devIconStyle} fill="#0077c0" />
               <DevIcon icon="heroku" style={devIconStyle} fill="purple" />
               <DevIcon icon="jest" style={devIconStyle} fill="" />
-              <DevIcon icon="github" style={devIconStyle} fill="" />
+              {theme === "light" ? (
+                <DevIcon
+                  icon="github"
+                  style={{
+                    width: "60px",
+                    height: "60px",
+                    margin: ".4em",
+                    fill: "black",
+                    transistion: "1s",
+                  }}
+                  fill=""
+                />
+              ) : (
+                <DevIcon
+                  icon="github"
+                  style={{
+                    width: "60px",
+                    height: "60px",
+                    margin: ".4em",
+                    fill: "white",
+                    transistion: "1s",
+                  }}
+                  fill=""
+                />
+              )}
             </div>
           </Col>
         </Row>
         <Row>
           <Col style={{ marginBottom: "2em" }}>
-            <h3 className="divider">
-              <span>Projects</span>
+            <h3 className={theme === "light" ? "divider" : "dividerDark"}>
+              <span className={theme === "light" ? "" : "dark"}>Projects</span>
             </h3>
           </Col>
         </Row>
         <Row className="proj">
-          <Col className="desc" md="6">
+          <Col className={theme === "light" ? "desc" : "descDark"} md="6">
             <u>
               <h3>Cyber Coins</h3>
             </u>
@@ -103,7 +162,7 @@ function App() {
           </Col>
         </Row>
         <Row className="proj">
-          <Col className="desc" md="6">
+          <Col className={theme === "light" ? "desc" : "descDark"} md="6">
             <u>
               <h3>Money Transfer</h3>
             </u>
@@ -131,7 +190,7 @@ function App() {
           </Col>
         </Row>
         <Row className="proj">
-          <Col className="desc" md="6">
+          <Col className={theme === "light" ? "desc" : "descDark"} md="6">
             <u>
               <h3>Beer Buddies</h3>
             </u>
@@ -158,7 +217,7 @@ function App() {
           </Col>
         </Row>
         <Row className="proj">
-          <Col className="desc" md="6">
+          <Col className={theme === "light" ? "desc" : "descDark"} md="6">
             <u>
               <h3>Gym Franchise</h3>
             </u>
@@ -175,7 +234,7 @@ function App() {
           </Col>
         </Row>
         <Row className="proj">
-          <Col className="desc" md="6">
+          <Col className={theme === "light" ? "desc" : "descDark"} md="6">
             <u>
               <h3>TranscoBrisabne</h3>
             </u>
@@ -204,7 +263,7 @@ function App() {
           </Col>
         </Row>
         <Row className="proj">
-          <Col className="desc" md="6">
+          <Col className={theme === "light" ? "desc" : "descDark"} md="6">
             <u>
               <h3>Books Assignment</h3>
             </u>
@@ -222,6 +281,7 @@ function App() {
           </Col>
         </Row>
       </Container>
+      <footer />
     </div>
   );
 }

@@ -1,23 +1,73 @@
 .App {
   text-align: center;
+  background-color: white;
+  transition: 1s;
+}
+.dark {
+  color: #212529;
+  transition: 1s;
+}
+.light {
+  color: #fff;
+  transition: 1s;
+}
+.AppDark {
+  text-align: center;
+  background-color: black;
+  transition: 1s;
+}
+.bodyDark {
+  background-color: black;
+  transition: 1s;
+}
+#lightDark {
+  position: absolute;
+  right: 4%;
+  top: 3%;
+  font-size: 1.5em;
+}
+#lightDark:hover {
+  font-size: 1.7em;
+  transition: 0.8s;
+}
+.blackGit {
+  fill: rgb(0, 0, 0);
+  transition: 1s;
+}
+.blackGit {
+  fill: #fff;
+  transition: 1s;
 }
 #profilePic {
-  /* height: 200px;
-  width: 200px; */
   height: 250px;
   width: 250px;
   background-color: grey;
   margin-bottom: 1em;
 }
 
-h3.divider {
+.divider {
+  --divider-color: #000;
+  --transition-delay: 1s;
   margin: 1.5em;
   width: 100%;
   text-align: center;
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid var(--divider-color);
   line-height: 0.1em;
   margin: 1.5em 0 1.5em;
+  transition: var(--transition-delay);
 }
+.dividerDark {
+  --divider-color: rgb(255, 255, 255);
+  --transition-delay: 1s;
+  margin: 1.5em;
+  width: 100%;
+  text-align: center;
+  border-bottom: 1px solid var(--divider-color);
+  line-height: 0.1em;
+  margin: 1.5em 0 1.5em;
+  transition: var(--transition-delay);
+}
+
 #about {
   margin-top: 0;
 }
@@ -27,6 +77,7 @@ h3.divider {
   right: 51%;
   fill: rgb(253, 253, 253);
 }
+
 .gitlink:hover {
   font-size: 2em;
   fill: rgb(0, 0, 0);
@@ -34,11 +85,20 @@ h3.divider {
 .mobileGit {
   display: none;
   padding: 0px;
+  fill: rgb(253, 253, 253);
 }
 h3 span {
   background: #fff;
   padding: 0 10px;
   margin-top: 1em;
+  transition: 1s;
+}
+h3 span.dark {
+  background: rgb(0, 0, 0);
+  color: #fff;
+  padding: 0 10px;
+  margin-top: 1em;
+  transition: 1s;
 }
 .proj {
   margin: 1.5em 0 1.5em;
@@ -46,13 +106,38 @@ h3 span {
   border-radius: 1em;
   border: rgb(100, 100, 100) solid 1px;
 }
+.projDark {
+  margin: 1.5em 0 1.5em;
+  /* padding: 1em; */
+  border-radius: 1em;
+  border: rgb(255, 255, 255) solid 1px;
+}
 .desc > u,
 .desc > p,
 .desc > u > h3 {
   /* color: rgb(255, 255, 255); */
   color: rgb(0, 0, 0);
+  transition: 1s;
+}
+.descDark > u,
+.descDark > p,
+.descDark > u > h3 {
+  /* color: rgb(255, 255, 255); */
+  color: rgb(255, 255, 255);
+  transition: 1s;
+}
+.desc > p > a {
+  color: blue;
+  transition: 1s;
+}
+.descDark > p > a {
+  color: aqua;
+  transition: 1s;
 }
 .desc > p {
+  padding-top: 1em;
+}
+.descDark > p {
   padding-top: 1em;
 }
 .desc {
@@ -63,6 +148,17 @@ h3 span {
   border-top-left-radius: 1em;
   border-bottom-left-radius: 1em;
   padding: 1em;
+  transition: 1s;
+}
+.descDark {
+  /* background-color: rgb(107, 106, 106); */
+  /* background-color: rgba(42, 96, 243, 0.849); */
+  /* background-color: rgba(165, 170, 182, 0.849); */
+  background-color: rgba(133, 133, 134, 0.849);
+  border-top-left-radius: 1em;
+  border-bottom-left-radius: 1em;
+  padding: 1em;
+  transition: 1s;
 }
 @media screen and (max-width: 480px) {
   .proj {
@@ -85,6 +181,29 @@ h3 span {
   }
 }
 @media screen and (max-width: 520px) {
+  .proj {
+    margin-bottom: 4.5em;
+    padding-bottom: 5px;
+    border: none;
+    border-bottom: 1px black double;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  .projDark {
+    margin-bottom: 4.5em;
+    border: none;
+    border-bottom: 1px rgb(255, 255, 255) double;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  .desc {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  .descDark {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
   .gitlink {
     display: none;
   }
@@ -93,6 +212,7 @@ h3 span {
     right: 3%;
     font-size: 1.3em;
     border-radius: 0.1em;
+    fill: white;
   }
   p.mobileGit {
     display: block;

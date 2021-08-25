@@ -1,4 +1,3 @@
-import classes from "./projects.module.css";
 import Carousel from "react-bootstrap/Carousel";
 
 const Coins = (props) => {
