@@ -96,7 +96,7 @@ function App() {
             >
               Hi, my name is Matthew and I recently completed a Diploma of Web
               Development. I am looking to commence my career as a Web
-              Developer. Some prviouse work experienece includes;
+              Developer. Some previous work experience includes;
             </p>
             <p
               className={theme === "light" ? "dark" : "light"}
@@ -126,28 +126,28 @@ function App() {
               <li>
                 <p className={theme === "light" ? "dark" : "light"}>
                   Flexible: Comfortable with changing environments and
-                  situations
+                  situations.
                 </p>
               </li>
               <li>
                 <p className={theme === "light" ? "dark" : "light"}>
-                  Physically Fit: A keen interest in keeping fit and active
+                  Physically Fit: A keen interest in keeping fit and active.
                 </p>
               </li>
               <li>
                 <p className={theme === "light" ? "dark" : "light"}>
                   Reliable: Strong work ethic, honest, reliable, able to
-                  responsibly undertake tasks
+                  responsibly undertake tasks.
                 </p>
               </li>
               <li>
                 <p className={theme === "light" ? "dark" : "light"}>
-                  Communicator: Good verbal and written communication skills
+                  Communicator: Good verbal and written communication skills.
                 </p>
               </li>
               <li>
                 <p className={theme === "light" ? "dark" : "light"}>
-                  Time management: Excellent time management skills
+                  Time management: Excellent time management skills.
                 </p>
               </li>
             </ul>
