@@ -68,6 +68,20 @@ function App() {
             >
               emailformatthew@email.com
             </p>
+            <h4
+              className={theme === "light" ? "dark" : "light"}
+              style={{ marginBottom: "1.5em" }}
+            >
+              Qualifications:
+            </h4>
+            <ul>
+              <p className={theme === "light" ? "dark" : "light"}>
+                Diploma of Web Development (2020 - 2021)
+              </p>
+              <p className={theme === "light" ? "dark" : "light"}>
+                Bachelor of Construction management - Hons (2016 - 2020)
+              </p>
+            </ul>
           </Col>
           <Col md="6">
             <h3
@@ -77,17 +91,57 @@ function App() {
               <span className={theme === "light" ? "" : "dark"}>About</span>
             </h3>
             <p className={theme === "light" ? "dark" : "light"}>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
-              similique eaque repellat accusamus delectus nemo aperiam explicabo
-              quo dolorem mollitia fugiat enim provident nihil vitae qui omnis
-              voluptas, fuga ducimus. Lorem ipsum dolor sit amet consectetur
-              adipisicing elit. Beatae similique eaque repellat accusamus
-              delectus nemo aperiam explicabo quo dolorem mollitia fugiat enim
-              provident nihil vitae qui omnis voluptas, fuga ducimus.
-              adipisicing elit. Beatae similique eaque repellat accusamus
-              delectus nemo aperiam explicabo quo dolorem mollitia fugiat enim
-              provident nihil vitae qui omnis voluptas, fuga ducimus.
+              Hi, my name is Matthew and I recently completed a Diploma of Web
+              Development. I am looking to commence my career as a Web
+              Developer. Some prviouse work experienece includes;
             </p>
+            <p className={theme === "light" ? "dark" : "light"}>
+              Project manager at Griffith University (20017 - 2019). Management
+              of small construction project through the design and construction
+              phases. Ensuring projects adhere to budget and time constraints
+              and follow Griffith University policies. It was a role requirement
+              to work with minimal supervision.
+            </p>
+            <p className={theme === "light" ? "dark" : "light"}>
+              Newitt & Hansen Builders (2012 - 2016). Labouring & Carpentry
+              duties for family building company, working on various residential
+              and commercial projects.
+            </p>
+            <h4
+              className={theme === "light" ? "dark" : "light"}
+              style={{ marginBottom: "1em", marginTop: "1em" }}
+            >
+              Key Attributes:
+            </h4>
+            <ul>
+              <li>
+                <p className={theme === "light" ? "dark" : "light"}>
+                  Flexible: Comfortable with changing environments and
+                  situations
+                </p>
+              </li>
+              <li>
+                <p className={theme === "light" ? "dark" : "light"}>
+                  Physically Fit: A keen interest in keeping fit and active
+                </p>
+              </li>
+              <li>
+                <p className={theme === "light" ? "dark" : "light"}>
+                  Reliable: Strong work ethic, honest, reliable, able to
+                  responsibly undertake tasks
+                </p>
+              </li>
+              <li>
+                <p className={theme === "light" ? "dark" : "light"}>
+                  Communicator: Good verbal and written communication skills
+                </p>
+              </li>
+              <li>
+                <p className={theme === "light" ? "dark" : "light"}>
+                  Time management: Excellent time management skills
+                </p>
+              </li>
+            </ul>
           </Col>
         </Row>
         <Row>

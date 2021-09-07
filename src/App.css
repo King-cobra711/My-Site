@@ -3,6 +3,10 @@
   background-color: white;
   transition: 1s;
 }
+ul {
+  text-align: left;
+}
+
 .dark {
   color: #212529;
   transition: 1s;
