@@ -79,7 +79,7 @@ function App() {
                 Diploma of Web Development (2020 - 2021)
               </p>
               <p className={theme === "light" ? "dark" : "light"}>
-                Bachelor of Construction management - Hons (2016 - 2020)
+                Bachelor of Construction Management - Hons (2016 - 2020)
               </p>
             </ul>
           </Col>
@@ -102,7 +102,7 @@ function App() {
               className={theme === "light" ? "dark" : "light"}
               style={{ textAlign: "justify" }}
             >
-              Project manager at Griffith University (20017 - 2019). Management
+              Project Manager at Griffith University (20017 - 2019). Management
               of small construction project through the design and construction
               phases. Ensuring projects adhere to budget and time constraints
               and follow Griffith University policies. It was a role requirement
