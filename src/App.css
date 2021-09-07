@@ -23,7 +23,7 @@
 #lightDark {
   position: absolute;
   right: 4%;
-  top: 3%;
+  top: 4%;
   font-size: 1.5em;
 }
 #lightDark:hover {
@@ -39,10 +39,11 @@
   transition: 1s;
 }
 #profilePic {
-  height: 250px;
-  width: 250px;
+  height: 300px;
+  width: 300px;
   background-color: grey;
   margin-bottom: 1em;
+  border-radius: 2em;
 }
 
 .divider {
@@ -141,9 +142,6 @@ h3 span.dark {
   padding-top: 1em;
 }
 .desc {
-  /* background-color: rgb(107, 106, 106); */
-  /* background-color: rgba(42, 96, 243, 0.849); */
-  /* background-color: rgba(165, 170, 182, 0.849); */
   background-color: rgba(195, 198, 204, 0.849);
   border-top-left-radius: 1em;
   border-bottom-left-radius: 1em;
@@ -151,10 +149,7 @@ h3 span.dark {
   transition: 1s;
 }
 .descDark {
-  /* background-color: rgb(107, 106, 106); */
-  /* background-color: rgba(42, 96, 243, 0.849); */
-  /* background-color: rgba(165, 170, 182, 0.849); */
-  background-color: rgba(133, 133, 134, 0.849);
+  background-color: rgba(83, 83, 83, 0.726);
   border-top-left-radius: 1em;
   border-bottom-left-radius: 1em;
   padding: 1em;
@@ -229,10 +224,8 @@ h3 span.dark {
     height: 210px;
     object-fit: cover;
   }
-  /* .proj {
-    margin: 0;
-    margin-bottom: 2em;
-    border-top-left-radius: 1em;
-    border-top-right-radius: 1em;
-  } */
+  #lightDark {
+    right: 1.5%;
+    top: 1.5%;
+  }
 }

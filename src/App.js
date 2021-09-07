@@ -1,5 +1,5 @@
 import "./App.css";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import DevIcon from "devicon-react-svg";
@@ -14,16 +14,18 @@ import Transco from "./Projects/transco_brisbane";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
-  const [theme, setTheme] = useState("light");
+  const Ltheme = localStorage.getItem("Dark-mode");
+  const [theme, setTheme] = useState(Ltheme);
 
   const ToggleTheme = () => {
     if (theme === "light") {
       setTheme("dark");
       document.body.classList.add("bodyDark");
+      localStorage.setItem("Dark-mode", "dark");
     } else {
       setTheme("light");
-      document.body.classList.add("bodyDark");
       document.body.classList.remove("bodyDark");
+      localStorage.setItem("Dark-mode", "light");
     }
   };
 
@@ -32,6 +34,15 @@ function App() {
     height: "60px",
     margin: ".4em",
   };
+
+  useEffect(() => {
+    if (localStorage.getItem("Dark-mode")) {
+      const localTheme = localStorage.getItem("Dark-mode");
+      setTheme(localTheme);
+    } else {
+      setTheme("light");
+    }
+  }, []);
   return (
     <div className={theme === "light" ? "App" : "AppDark"}>
       {theme === "light" ? (
@@ -47,7 +58,7 @@ function App() {
       <Container>
         <Row style={{ paddingTop: "10%" }}>
           <Col md="6">
-            <img id="profilePic" />
+            <img id="profilePic" src="./me.png" />
             <h2 className={theme === "light" ? "dark" : "light"}>
               Matthew Hansen
             </h2>
@@ -158,7 +169,7 @@ function App() {
             </p>
           </Col>
           <Col className="pics" md="6">
-            <Coins />
+            <Coins style={{ color: "red" }} />
           </Col>
         </Row>
         <Row className="proj">
@@ -197,8 +208,8 @@ function App() {
             <p>
               Beer Buddies is a moble only memory card game. It's a fullstack
               application with front and backend validation. Users are able to
-              level up and customise their bio. Some users have admin status
-              which allowes them extra privilages.
+              level up and customise their biography. Some users have admin
+              status which allowes them extra privilages.
             </p>
             <p>
               Technologies: React, Nodejs, MaterialUI.{"   "}

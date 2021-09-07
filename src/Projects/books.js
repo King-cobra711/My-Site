@@ -2,7 +2,7 @@ import Carousel from "react-bootstrap/Carousel";
 
 const Books = (props) => {
   return (
-    <Carousel interval="10000" variant="dark">
+    <Carousel interval="8000" variant="dark">
       <Carousel.Item>
         <img src="./books/book1.png" alt="First slide" />
       </Carousel.Item>

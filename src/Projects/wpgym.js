@@ -2,7 +2,7 @@ import Carousel from "react-bootstrap/Carousel";
 
 const Wpgym = (props) => {
   return (
-    <Carousel interval="10000" variant="dark">
+    <Carousel interval="8000" variant="dark">
       <Carousel.Item>
         <img src="./wpgym/wpgym1.png" alt="First slide" />
       </Carousel.Item>
