@@ -66,7 +66,7 @@ function App() {
               className={theme === "light" ? "dark" : "light"}
               style={{ marginBottom: "3em" }}
             >
-              emailformatthew@email.com
+              matt@matthewhansen.com.au
             </p>
             <h4
               className={theme === "light" ? "dark" : "light"}

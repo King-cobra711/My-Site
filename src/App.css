@@ -6,7 +6,9 @@
 ul {
   text-align: left;
 }
-
+li::marker {
+  color: rgb(0, 110, 255);
+}
 .dark {
   color: #212529;
   transition: 1s;
