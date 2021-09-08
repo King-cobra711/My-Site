@@ -96,14 +96,14 @@ function App() {
             >
               Hi, my name is Matthew and I recently completed a Diploma of Web
               Development. I am looking to commence my career as a Web
-              Developer. Some previous work experience includes;
+              Developer. Some previous work experience includes:
             </p>
             <p
               className={theme === "light" ? "dark" : "light"}
               style={{ textAlign: "justify" }}
             >
               Project Manager at Griffith University (20017 - 2019). Management
-              of small construction project through the design and construction
+              of small construction projects through the design and construction
               phases. Ensuring projects adhere to budget and time constraints
               and follow Griffith University policies. It was a role requirement
               to work with minimal supervision.
@@ -269,7 +269,7 @@ function App() {
               <h3>Beer Buddies</h3>
             </u>
             <p>
-              Beer Buddies is a moble only memory card game. It's a fullstack
+              Beer Buddies is a mobile only memory card game. It's a fullstack
               application with front and backend validation. Users are able to
               level up and customise their biography. Some users have admin
               status which allowes them extra privilages.
@@ -318,7 +318,7 @@ function App() {
               website along with a custom form (JS) that when filled out
               genereted cost estimate for the customer. This quotation form was
               an intergral part of the site and saved the client from taking
-              calls and calculating themselves.
+              calls and calculating the quote themselves.
             </p>
             <p>
               Technologies: Wordpress, Javascript.{"   "}
