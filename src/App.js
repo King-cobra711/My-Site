@@ -242,7 +242,7 @@ function App() {
             </u>
             <p>
               Money Transfer is an application that acts as two bank accounts
-              and enables the user to move/tranfer money between accounts.
+              and enables the user to move/transfer money between accounts.
               Nodejs is used for the backend and all calculations are done there
               to simulate a database. Both front and backend are validated.
               Transaction history is also available.
@@ -272,7 +272,7 @@ function App() {
               Beer Buddies is a mobile only memory card game. It's a fullstack
               application with front and backend validation. Users are able to
               level up and customise their biography. Some users have admin
-              status which allowes them extra privilages.
+              status which allows them extra privileges.
             </p>
             <p>
               Technologies: React, Nodejs, MaterialUI.{"   "}
@@ -310,14 +310,14 @@ function App() {
         <Row className="proj">
           <Col className={theme === "light" ? "desc" : "descDark"} md="6">
             <u>
-              <h3>TranscoBrisabne</h3>
+              <h3>TranscoBrisbane</h3>
             </u>
             <p>
               This was an assessment piece for tafe that required me to make a
               website for a shipping company. Wordpress was used to make this
               website along with a custom form (JS) that when filled out
-              genereted cost estimate for the customer. This quotation form was
-              an intergral part of the site and saved the client from taking
+              generated a cost estimate for the customer. This quotation form
+              was an intergral part of the site and saved the client from taking
               calls and calculating the quote themselves.
             </p>
             <p>
@@ -342,11 +342,11 @@ function App() {
               <h3>Books Assignment</h3>
             </u>
             <p>
-              This was an assesment piece for tafe that required me to create a
-              site that cataloged a list of books based on their popularity.
-              Book information was stored in database. Php was used as a backend
-              language. Site allowed for different user login and privilages.
-              This was one of my first attempts at a website.
+              This was an assessment piece for tafe that required me to create a
+              site that catalogued a list of books based on their popularity.
+              Book information was stored in a database. Php was used as a
+              backend language. Site allowed for different user logins and
+              privileges. This was one of my first attempts at a website.
             </p>
             <p>Technologies: Html5, CSS, PHP, MAMP, SQL</p>
           </Col>
