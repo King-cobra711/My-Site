@@ -210,7 +210,7 @@ function App() {
             </h3>
           </Col>
         </Row>
-        <Row className="proj">
+        <Row className={theme === "light" ? "proj" : "projDark"}>
           <Col className={theme === "light" ? "desc" : "descDark"} md="6">
             <u>
               <h3>Cyber Coins</h3>
@@ -238,7 +238,7 @@ function App() {
             <Coins style={{ color: "red" }} />
           </Col>
         </Row>
-        <Row className="proj">
+        <Row className={theme === "light" ? "proj" : "projDark"}>
           <Col className={theme === "light" ? "desc" : "descDark"} md="6">
             <u>
               <h3>Money Transfer</h3>
@@ -266,7 +266,7 @@ function App() {
             <Money />
           </Col>
         </Row>
-        <Row className="proj">
+        <Row className={theme === "light" ? "proj" : "projDark"}>
           <Col className={theme === "light" ? "desc" : "descDark"} md="6">
             <u>
               <h3>Beer Buddies</h3>
@@ -293,7 +293,7 @@ function App() {
             <BeerBuddies />
           </Col>
         </Row>
-        <Row className="proj">
+        <Row className={theme === "light" ? "proj" : "projDark"}>
           <Col className={theme === "light" ? "desc" : "descDark"} md="6">
             <u>
               <h3>Gym Franchise</h3>
@@ -310,7 +310,7 @@ function App() {
             <Wpgym />
           </Col>
         </Row>
-        <Row className="proj">
+        <Row className={theme === "light" ? "proj" : "projDark"}>
           <Col className={theme === "light" ? "desc" : "descDark"} md="6">
             <u>
               <h3>TranscoBrisbane</h3>
@@ -339,7 +339,7 @@ function App() {
             <Transco />
           </Col>
         </Row>
-        <Row className="proj">
+        <Row className={theme === "light" ? "proj" : "projDark"}>
           <Col className={theme === "light" ? "desc" : "descDark"} md="6">
             <u>
               <h3>Books Assignment</h3>
