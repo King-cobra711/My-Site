@@ -78,7 +78,10 @@ function App() {
               <p className={theme === "light" ? "dark" : "light"}>
                 Diploma of Web Development (2020 - 2021)
               </p>
-              <p className={theme === "light" ? "dark" : "light"}>
+              <p
+                className={theme === "light" ? "dark" : "light"}
+                id="aboveAbout"
+              >
                 Bachelor of Construction Management - Hons (2016 - 2020)
               </p>
             </ul>

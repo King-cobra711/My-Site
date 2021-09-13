@@ -186,6 +186,9 @@ h3 span.dark {
     height: 200px;
     width: 200px;
   }
+  #aboveAbout {
+    margin-bottom: 2em;
+  }
   .proj {
     margin-bottom: 4.5em;
     padding-bottom: 5px;
