@@ -133,6 +133,9 @@ h3 span.dark {
   color: rgb(255, 255, 255);
   transition: 1s;
 }
+a {
+  transition: 1s;
+}
 .desc > p > a {
   color: blue;
   transition: 1s;
