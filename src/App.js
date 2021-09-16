@@ -62,11 +62,17 @@ function App() {
             <h2 className={theme === "light" ? "dark" : "light"}>
               Matthew Hansen
             </h2>
+            <p className={theme === "light" ? "dark" : "light"}>
+              matt@matthewhansen.com.au
+            </p>
             <p
               className={theme === "light" ? "dark" : "light"}
-              style={{ marginBottom: "3em" }}
+              style={{ marginBottom: "1.5em" }}
             >
-              matt@matthewhansen.com.au
+              GitHub:&nbsp;
+              <a href="https://github.com/King-cobra711">
+                https://github.com/King-cobra711
+              </a>
             </p>
             <h4
               className={theme === "light" ? "dark" : "light"}
