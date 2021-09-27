@@ -181,6 +181,8 @@ function App() {
               <DevIcon icon="drupal" style={devIconStyle} fill="#0077c0" />
               <DevIcon icon="heroku" style={devIconStyle} fill="purple" />
               <DevIcon icon="jest" style={devIconStyle} fill="" />
+              <DevIcon icon="typescrip" style={devIconStyle} fill="" />
+              <DevIcon icon="nestjs" style={devIconStyle} fill="" />
               {theme === "light" ? (
                 <DevIcon
                   icon="github"
