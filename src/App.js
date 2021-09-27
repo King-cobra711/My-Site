@@ -12,6 +12,7 @@ import Money from "./Projects/money_transfer";
 import BeerBuddies from "./Projects/beer_buddies";
 import Transco from "./Projects/transco_brisbane";
 import "bootstrap/dist/css/bootstrap.min.css";
+import { TypescriptOriginalIcon, NestOriginalIcon } from "react-devicons";
 
 function App() {
   const Ltheme = localStorage.getItem("Dark-mode");
@@ -181,8 +182,8 @@ function App() {
               <DevIcon icon="drupal" style={devIconStyle} fill="#0077c0" />
               <DevIcon icon="heroku" style={devIconStyle} fill="purple" />
               <DevIcon icon="jest" style={devIconStyle} fill="" />
-              <DevIcon icon="typescrip" style={devIconStyle} fill="" />
-              <DevIcon icon="nestjs" style={devIconStyle} fill="" />
+              <TypescriptOriginalIcon style={{ fontSize: "2.5em" }} />
+
               {theme === "light" ? (
                 <DevIcon
                   icon="github"
