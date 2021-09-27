@@ -12,7 +12,7 @@ import Money from "./Projects/money_transfer";
 import BeerBuddies from "./Projects/beer_buddies";
 import Transco from "./Projects/transco_brisbane";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { TypescriptOriginalIcon, NestOriginalIcon } from "react-devicons";
+import { TypescriptOriginalIcon } from "react-devicons";
 
 function App() {
   const Ltheme = localStorage.getItem("Dark-mode");
