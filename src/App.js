@@ -182,10 +182,6 @@ function App() {
               <DevIcon icon="drupal" style={devIconStyle} fill="#0077c0" />
               <DevIcon icon="heroku" style={devIconStyle} fill="purple" />
               <DevIcon icon="jest" style={devIconStyle} fill="" />
-              <TypescriptOriginalIcon
-                style={{ fontSize: "2.5em", margin: ".4em" }}
-              />
-
               {theme === "light" ? (
                 <DevIcon
                   icon="github"
@@ -209,6 +205,15 @@ function App() {
                     transistion: "1s",
                   }}
                   fill=""
+                />
+              )}
+              {theme === "light" ? (
+                <TypescriptOriginalIcon
+                  style={{ fontSize: "2.5em", margin: ".4em" }}
+                />
+              ) : (
+                <TypescriptOriginalIcon
+                  style={{ fontSize: "2.5em", margin: ".4em", color: "black" }}
                 />
               )}
             </div>
