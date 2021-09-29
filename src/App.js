@@ -11,6 +11,7 @@ import Coins from "./Projects/cyber_coins";
 import Money from "./Projects/money_transfer";
 import BeerBuddies from "./Projects/beer_buddies";
 import Transco from "./Projects/transco_brisbane";
+import ExerciseTracker from "./Projects/exercise_tracker";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { TypescriptOriginalIcon } from "react-devicons";
 
@@ -224,6 +225,33 @@ function App() {
             <h3 className={theme === "light" ? "divider" : "dividerDark"}>
               <span className={theme === "light" ? "" : "dark"}>Projects</span>
             </h3>
+          </Col>
+        </Row>
+        <Row className={theme === "light" ? "proj" : "projDark"}>
+          <Col className={theme === "light" ? "desc" : "descDark"} md="6">
+            <u>
+              <h3>Exercise Tracker</h3>
+            </u>
+            <p>
+              Exercise Tracker is a simple fullstack MERN application that
+              allows users to view, add, edit and delete exercise logs. Users
+              also have the ability to create new users and view existing users
+              through a dropdown menue.
+            </p>
+            <p>
+              Technologies: React, Bootstrap, Nodejs, Mongodb, Mongoose.{"   "}
+              <a href="https://github.com/King-cobra711/MERN_Exercise_Tracker">
+                <FaGithub className="gitlink" />
+              </a>
+            </p>
+            <p className="mobileGit">
+              <a href="https://github.com/King-cobra711/MERN_Exercise_Tracker">
+                GitHub <FaGithub className="gitlinkmob" />
+              </a>
+            </p>
+          </Col>
+          <Col className="pics" md="6">
+            <ExerciseTracker />
           </Col>
         </Row>
         <Row className={theme === "light" ? "proj" : "projDark"}>
