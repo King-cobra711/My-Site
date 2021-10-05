@@ -236,7 +236,7 @@ function App() {
               Exercise Tracker is a simple fullstack MERN application that
               allows users to view, add, edit and delete exercise logs. Users
               also have the ability to create new users and view existing users
-              through a dropdown menue.
+              through a dropdown menu.
             </p>
             <p>
               Technologies: React, Bootstrap, Nodejs, Mongodb, Mongoose.{"   "}
@@ -264,7 +264,7 @@ function App() {
               requests to retrieve data from a cryptocurrency api supplied by{" "}
               <a href="https://www.coingecko.com/en/api">CoinGecko</a>. This
               application has a refresh option and a searchbar that filters
-              results. Mobile first apllication.
+              results. Mobile first application.
             </p>
             <p>
               Technologies: Svelte, Tailwind CSS.{"   "}
